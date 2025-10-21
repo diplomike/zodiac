@@ -1,6 +1,19 @@
 library(tidyverse)
-library(usethis)
-library(gitcreds)
+
+library(usethis) 
+'For using use_git & use_github'
+
+use_git() 
+'To create the local version conrol system if it had not been set'
+
+use_github()
+'To create a remote repo on Github'
+
+library(gitcreds) 
+'For using gitcreds_set()'
+
+gitcreds_set() 
+'setting token for github'
 
 zodiac <- c(1:12)
 s <- sample(zodiac,300,T)

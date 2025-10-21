@@ -1,5 +1,6 @@
 library(tidyverse)
 library(usethis)
+library(gitcreds)
 
 zodiac <- c(1:12)
 s <- sample(zodiac,300,T)

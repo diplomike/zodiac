@@ -1,4 +1,6 @@
 library(tidyverse)
+library(usethis)
+
 zodiac <- c(1:12)
 s <- sample(zodiac,300,T)
 acc <- NULL

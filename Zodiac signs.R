@@ -1,19 +1,12 @@
 library(tidyverse)
+library(usethis) 'For using use_git & use_github'
+library(gitcreds) 'For using gitcreds_set()'
 
-library(usethis) 
-'For using use_git & use_github'
+gitcreds_set() 'setting token for github'
 
-use_git() 
-'To create the local version conrol system if it had not been set'
+use_git() 'To create the local version conrol system if it had not been set'
+use_github()'To create a remote repo on Github. It requires R 4.5 or above'
 
-use_github()
-'To create a remote repo on Github'
-
-library(gitcreds) 
-'For using gitcreds_set()'
-
-gitcreds_set() 
-'setting token for github'
 
 zodiac <- c(1:12)
 s <- sample(zodiac,300,T)
@@ -29,5 +22,3 @@ ggplot(data.frame(acc)) + geom_histogram(aes(acc), bins=50) +
   scale_x_continuous("Prediction accuracy", seq(0,,0.005),seq(0,,0.001),,seq(0,,0.005))
 
 quantile(acc, 0.99)
-
-'This is so annoying not being able to upload a repo'

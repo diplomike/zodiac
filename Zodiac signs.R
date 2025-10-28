@@ -3,7 +3,7 @@ library(usethis) 'For using use_git & use_github'
 library(gitcreds) 'For using gitcreds_set()'
 
 'This is the local version'
-'testing unabability to push'
+'testing inability to push'
 
 gitcreds_set() 'setting token for github. Not necessary if token already set.'
 

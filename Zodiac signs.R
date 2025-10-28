@@ -2,11 +2,7 @@ library(tidyverse)
 library(usethis) 'For using use_git & use_github'
 library(gitcreds) 'For using gitcreds_set()'
 
-<<<<<<< HEAD
 'This is the local version'
-=======
-'This is the remote version.'
->>>>>>> ee7f5424e2d0ddec61fe04a6bd0283bb42cbe4bb
 
 gitcreds_set() 'setting token for github. Not necessary if token already set.'
 

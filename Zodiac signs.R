@@ -1,14 +1,4 @@
 library(tidyverse)
-library(usethis) 'For using use_git & use_github'
-library(gitcreds) 'For using gitcreds_set()'
-
-'This is the local version'
-'testing inability to push'
-
-gitcreds_set() 'setting token for github. Not necessary if token already set.'
-
-use_git() 'To create the local version conrol system if it had not been set'
-use_github()'To create a remote repo on Github. It requires R 4.5 or above'
 
 zodiac <- c(1:12)
 s <- sample(zodiac,300,T)

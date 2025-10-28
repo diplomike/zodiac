@@ -3,11 +3,11 @@ library(usethis)
 'For using use_github'
 
 zodiac <- c(1:12)
-s <- sample(zodiac,300,T)
+s <- sample(zodiac,180,T)
 acc <- NULL
 pred <- NULL
 for (i in 1:1000) {
-  for (n in 1:300)
+  for (n in 1:180)
     pred <-  c(pred, s[n] == sample(zodiac,1))
   acc <- c(acc, mean(pred))
   pred <- NULL}

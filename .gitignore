@@ -4,6 +4,5 @@
 .httr-oauth
 .DS_Store
 .quarto
-curl install.png
-Rtools install.png
 Zodiac sign experiment.xlsx
+zodiac.Rproj
